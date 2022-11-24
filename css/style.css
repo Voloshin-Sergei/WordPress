@@ -39,6 +39,7 @@
   margin: 0;
 }
 
+/*Header block*/
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -119,6 +120,7 @@
   margin: 0 auto 206px;
 }
 
+/*About block*/
 .about {
   height: 1129px;
   background-color: #1d1d1d;
@@ -164,6 +166,8 @@
   line-height: 22px;
   color: #b7b7b7;
 }
+
+/*Team block*/
 
 .team {
   height: 745px;
@@ -234,4 +238,60 @@
 
 .team__icon-box a:hover {
   color: #949494;
+}
+
+/*Provide block*/
+.provide {
+  background-color: #181818;
+  padding-bottom: 155px;
+}
+
+.inverse .block__title {
+  padding-top: 176px;
+  color: #fff;
+}
+
+.inverse .block__text {
+  color: #777;
+}
+
+.provide__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 138px;
+}
+
+.provide__item {
+  text-align: center;
+  max-width: 335px;
+}
+
+.provide__item i {
+  color: #fff;
+  font-size: 63px;
+  width: 172px;
+  height: 172px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 43px;
+}
+
+.provide__item-title {
+  font-family: 'HelveticaNeueLTProLt', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 31px;
+}
+
+.provide__item-text {
+  font-family: 'HelveticaNeueLTProLt', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #383838;
 }

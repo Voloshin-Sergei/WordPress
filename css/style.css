@@ -70,6 +70,10 @@
   margin-right: 0;
 }
 
+.menu__mobile {
+  display: none;
+}
+
 .active a {
   color: #010101;
 }
@@ -89,7 +93,8 @@
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #1d1e1f;
-  margin: 207px auto 4px;
+  padding-top: 207px;
+  margin: 0px auto 4px;
 }
 
 .header__text {
@@ -134,7 +139,7 @@
   display: grid;
   justify-content: center;
   grid-template-rows: max-content max-content;
-  grid-template-columns: max-content min-content;
+  grid-template-columns: max-content max-content;
   grid-gap: 178px;
 }
 
@@ -342,7 +347,7 @@
   padding-top: 153px;
   display: flex;
   flex-direction: column;
-  min-width: 770px;
+  max-width: 770px;
   margin: 0 auto;
 }
 
@@ -418,4 +423,132 @@ input[type='number'] {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #3b3b3b;
+}
+
+/*Media iPad*/
+
+@media screen and (max-width: 769px) {
+  .container {
+    width: 768px;
+  }
+
+  .about {
+    height: auto;
+    padding-bottom: 200px;
+  }
+
+  .about__inner {
+    grid-gap: 30px;
+    grid-template-columns: max-content;
+  }
+
+  .team .block__title,
+  .provide .block__title {
+    padding-top: 100px;
+  }
+
+  .provide {
+    padding-bottom: 100px;
+  }
+
+  .provide__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .provide__item {
+    max-width: 300px;
+    margin: 0 30px 40px;
+  }
+
+  .contact__form {
+    padding-top: 100px;
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
+}
+
+/*Media for iPhone*/
+
+@media screen and (max-width: 376px) {
+  .container {
+    width: 375px;
+  }
+
+  .logo {
+    margin: 0 -15px;
+  }
+
+  .menu__desktop {
+    display: none;
+  }
+
+  .menu__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu__burger {
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    cursor: pointer;
+  }
+
+  .menu__burger::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+  }
+
+  .menu__burger::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+  }
+
+  .header__title {
+    padding-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .header__button {
+    margin-bottom: 100px;
+  }
+
+  .about__item {
+    max-width: 340px;
+  }
+
+  .team {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .team__inner {
+    padding-top: 100px;
+    flex-wrap: wrap;
+  }
+
+  .team__item {
+    width: 340px;
+  }
+
+  .provide__inner {
+    padding-top: 100px;
+  }
 }

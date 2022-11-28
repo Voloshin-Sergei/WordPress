@@ -103,12 +103,10 @@ Version: 0.1
 
 /*About block*/
 .about {
-  height: 1129px;
+  min-height: 1129px;
   background-color: #1d1d1d;
   padding-top: 128px;
   padding-bottom: 271px;
-  background: url('../img/buildings.png') center 101% repeat-x,
-    url('../img/buildings__black.png') center 101% repeat-x, #1d1d1d;
 }
 
 .about__inner {

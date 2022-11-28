@@ -13,7 +13,7 @@
       <div class="container">
         <nav class="menu__desktop">
           <ul class="menu">
-            <li class="menu__item active"><a href="#">Home</a></li>
+            <li class="menu__item active"><a href="<?= get_home_url(); ?>">Home</a></li>
             <li class="menu__item"><a href="#about">About Us</a></li>
             <li class="menu__item"><a href="#team">Team</a></li>
             <li class="menu__item">
@@ -32,7 +32,7 @@
           </div>
 
           <ul class="menu">
-            <li class="menu__item active"><a href="#">Home</a></li>
+            <li class="menu__item active"><a href="<?= get_home_url(); ?>">Home</a></li>
             <li class="menu__item"><a href="#about">About Us</a></li>
             <li class="menu__item"><a href="#team">Team</a></li>
 
@@ -43,11 +43,9 @@
         </nav>
 
         <div class="header__content">
-          <h1 class="header__title">We build it with passion</h1>
-          <p class="header__text">
-            Just to be clear, we do this for fun not for you, just kidding.
-          </p>
-          <a href="" class="header__button">READ MORE</a>
+          <h1 class="header__title"><?= CFS()->get('header_title'); ?></h1>
+          <p class="header__text"><?= CFS()->get('header_slogan'); ?></p>
+          <a href="#about" class="header__button"><?= CFS()->get('header_button'); ?></a>
         </div>
       </div>
     </header>
